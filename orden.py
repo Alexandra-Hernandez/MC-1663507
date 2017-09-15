@@ -4,6 +4,7 @@ cnt_selection=0
 cnt_quick=0
 def burbuja(A):
 	global cnt_burbuja
+	cnt_burbuja=0
 	for i in range (0, len(A)-1):
 		for j in range(0, len(A)-1):
 			cnt_burbuja+=1
@@ -11,12 +12,13 @@ def burbuja(A):
 				aux = A[j+1]
 				A[j+1]=A[j]
 				A[j]=aux
-	return A, cnt_burbuja
+	return cnt_burbuja
 
 
 
 def orden_por_inserccion(array):
 	global cnt_insertion
+	cnt_insertion=0
 	for indice in range(1, len(array)):
 		valor = array[indice]
 		i=indice-1       
@@ -28,12 +30,13 @@ def orden_por_inserccion(array):
 				i-=1
 			else:
 				break
-	return array, cnt_insertion
+	return cnt_insertion
 
 
 
 def selection(arr):
 	global cnt_selection
+	cnt_selection=0
 	for i in range(0,len(arr)-1):
 		val= i
 		for j in range(i+1, len(arr)):
@@ -44,7 +47,7 @@ def selection(arr):
 			aux=arr[i]
 			arr[i]=arr[val]
 			arr[val]=aux
-	return arr, cnt_selection
+	return cnt_selection
 
 
 def quicksort(arr):
@@ -59,8 +62,8 @@ def quicksort(arr):
 			menores.append(e)	
 		else:
 			mayores.append(e)
-	print(cnt_quick)
-	return quicksort(menores) + [p] + quicksort(mayores)
+	#print(cnt_quick)
+	#return quicksort(menores) + [p] + quicksort(mayores)
 
 import random
 def rndar(longitud):
@@ -71,14 +74,20 @@ def rndar(longitud):
 
 import copy
 L=4
-print("L", "B", "S", "I", "Q")
+print("Longitud", "Burbuja", "Selection", "Insertion", "Quick")
 while L<1100:
 	for replica in range(30):
+		
+		
+		
 		arr = rndar(L)
 		a, b, c, d = copy.deepcopy(arr), copy.deepcopy(arr), copy.deepcopy(arr), copy.deepcopy(arr)
 		bc = burbuja(a)
-		sc = orden_por_inserccion(b)
-		ic = selection(c)
-		qc = 0
-		r4 = quicksort(d)
+		ic = orden_por_inserccion(b)
+		sc = selection(c)
+		cnt_quick=0
+		qc = quicksort(d)
+	
+		print(L, bc, ic, sc, qc)
+		
 	L*=2 
