@@ -1,0 +1,12 @@
+reporte de pila, fila y grafo, busquedas amplitud y profundidad 
+que es casda cosa?
+como lo programe?
+en git:
+-archivo codigo de grafo, fila, 
+-instrucciones para generar un grafo 
+-dfs y bfs
+-comentar#que resultado les dio
+para el viernes 6 de octubre 
+
+la semana que viene:
+seguiremos utilizando filas, pilas y grafos.
