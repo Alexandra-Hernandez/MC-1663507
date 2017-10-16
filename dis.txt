@@ -55,3 +55,13 @@ g.conecta('c','f',10)
 g.conecta('b','f',1)
  
 print(g.shortest('c'))
+
+
+
+5 grafos
+-5 nodos-10 aristas
+-10 nodos-12 aristas
+-15 nodos-
+20
+25
+tablita de resultados 
