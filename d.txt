@@ -35,3 +35,4 @@ mochila 3 nov reporte
 10 noviembre mochila(genetico)
 17 nov ??
 fecha de examen proyecto final
+***algoritmo dde aproximacion que es algortimos kruscal
