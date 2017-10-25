@@ -10,3 +10,4 @@ para el viernes 6 de octubre
 
 la semana que viene:
 seguiremos utilizando filas, pilas y grafos.
+https://jariasf.wordpress.com/2012/04/19/arbol-de-expansion-minima-algoritmo-de-kruskal/
