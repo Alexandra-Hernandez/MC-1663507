@@ -128,7 +128,7 @@ g.conecta('8','9', 8.5)
 g.conecta('8','10', 26.4)
 g.conecta('9','10', 33.2)
 
-print("ALGORITMO, SOLUCION EXACTA AL PAV\n")
+
 tim=time.clock()
 camino=g.PAV()
 dfs=camino
